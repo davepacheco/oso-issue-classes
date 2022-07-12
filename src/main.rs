@@ -21,8 +21,9 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
     oso.register_class(User::get_polar_class())?;
     oso.register_class(Doc1::get_polar_class())?;
-    // Oops!  We forgot to register doc1.
+    // Oops!  We forgot to register Doc2.
 
+    // ... and we forgot its Resource block too
     oso.load_str(
         r#"
         actor User {}
